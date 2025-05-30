@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🌤 Weather App</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌤 Weather App</h1>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieBanner" class="hidden">
+      <p>We use cookies to improve your experience. <button id="acceptCookies">Accept</button></p>
+    </div>
+
+    <!-- Weather Section -->
+    <div id="weatherSection" class="hidden">
+      <input type="text" id="cityInput" placeholder="Enter city name" />
+      <button id="getWeather">Get Weather</button>
+
+      <!-- Current Weather Info -->
+      <div id="weatherInfo"></div>
+
+      <!-- Forecast Section -->
+      <h3>7-Day Forecast</h3>
+      <div id="forecastContainer" class="forecast-container"></div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
